@@ -21,6 +21,7 @@ Gradle is a build automation tool which is more flexible to automate the process
 in the similar pattern to maven which is used communicate with it.
 • With respect to Maven, the entire thing itself is xml but here in Gradle it holds build scripts.
 • It holds gradle wrapper which holds the runtime in it, and by using this wrapper we can simply run this file on any computer, just by running the scripts rather than installing gradle on the other device.
+
 • The structure is given below for gradle:- 
 
     my-project/
