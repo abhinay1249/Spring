@@ -37,3 +37,5 @@ in the similar pattern to maven which is used communicate with it.
     |-- src/test/resources/         # Configs, properties, static files
     |-- build/                      # Auto generated build output(clases, jars)
 
+• Gradle Wrapper :- A set of scripts and small jar files that allow you to run gradle without installing gradle manually on your system.
+
