@@ -12,3 +12,7 @@ Gradle is a build automation tool which is more flexible to automate the process
     • When you build your projects, the output can be packaged in JAR(Java Archive)/ WAR(Web Archive)
     • Bundle your code plus all dependencies.
     • Can be run directly without extra setup.
+
+• What is the major difference between Maven and Gradle?
+    • Maven does suppot java itself as the implementation language.
+    • Gradle does supports multiple implementation lanaguages such as Java, Kotlin, Scala, Swift, Groovy, C++ etc.
