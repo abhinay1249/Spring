@@ -8,4 +8,8 @@ JDBC refers to Java DataBase Connectivity.
 
 # Steps Involved in Developed JDBC Application
 
-• Import the required package (Also download & Add Database specific jar into the project).
+1. Import the required package (Also download & Add Database specific jar into the project).
+2. Load and Register the respective database driver.
+3. Establish a connection.
+4. Create a statement.
+5. Execute the query.
