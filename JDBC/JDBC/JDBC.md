@@ -13,3 +13,5 @@ JDBC refers to Java DataBase Connectivity.
 3. Establish a connection.
 4. Create a statement.
 5. Execute the query.
+6. Process the Result.
+7. Close the Connection.
