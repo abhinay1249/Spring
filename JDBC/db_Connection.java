@@ -1,6 +1,5 @@
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -28,18 +27,26 @@ public class db_Connection {
 
         // Execute Query
 
-        String query = "SELECT COUNT(*) FROM PRODUCTION.HYDERABAD_TEAM.EMPLOYEES;";
-        ResultSet result = statement.executeQuery(query);
+        String query = "INSERT INTO PRODUCTION.HYDERABAD_TEAM.EMPLOYEES(EMPLOYEE_ID, FIRST_NAME, LAST_NAME, EMAIL, PHONE, HIRE_DATE, SALARY, DEPARTMENT_ID) VALUES(200001,'Abhinay','Marise','abhinay@google.com','7075751249','2024-11-15',145695.00,7630)";
+        
+        // ResultSet result = statement.executeQuery(query);
+        
+        int rows = statement.executeUpdate(query);
         
         // Process the result
 
-        if(!(result.next())){
+        // if(!(result.next())){
+        //     System.out.println(" No Employee data is Found");
+        // }else{
+        //     int count = result.getInt(1);
+        //     System.out.println("The number of Employees are" + count);
+        // }
+
+        if(rows != 0){
             System.out.println(" No Employee data is Found");
         }else{
-            int count = result.getInt(1);
-            System.out.println("The number of Employees are" + count);
+            System.out.println("First_Name is Successfully Updated");
         }
-        
 
         // Close the Connection
         
