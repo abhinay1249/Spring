@@ -20,3 +20,43 @@ JDBC refers to Java DataBase Connectivity.
 # References from the Code
 
 • Class.forName("net.snowflake.client.api.driver.SnowflakeDriver");
+
+Why Class.forName is used? Intially When you are create a class and then create one static and non-static block. Once you create a object for it and then the respective print statements, both the methods are executed successfully.
+
+class Demo{
+    static{
+        System.out.println("Static Block");
+    }
+
+    {
+        System.out.println("Non-Static Block");
+    }
+}
+
+public class LaunchClass{
+    public static void main(String[] args){
+        Demo demo = new Demo();
+    }
+}
+
+Output:-
+Static Block
+Non-Static Block
+
+Rather than creating a object from the above structure it is simpler enough to create by using Class.forName("Demo");
+
+class Demo{
+    static{
+        System.out.println("Static Block");
+    }
+
+    {
+        System.out.println("Non-Static Block");
+    }
+}
+
+public class LaunchClass{
+    public static void main(String[] args){
+        Class.forName("Demo");
+    }
+}
