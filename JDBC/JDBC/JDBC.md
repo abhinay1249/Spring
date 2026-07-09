@@ -15,3 +15,8 @@ JDBC refers to Java DataBase Connectivity.
 5. Execute the query.
 6. Process the Result.
 7. Close the Connection.
+
+
+# References from the Code
+
+• Class.forName("net.snowflake.client.api.driver.SnowflakeDriver");
