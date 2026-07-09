@@ -18,7 +18,7 @@ public class db_Connection {
 
         Connection conn = DriverManager.getConnection(url,user,password);
 
-        // Create A Statement
+        // Create a Statement
 
         Statement statement = conn.createStatement();
 
