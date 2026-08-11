@@ -6,7 +6,7 @@ JDBC refers to Java DataBase Connectivity.
 • If the resepective application is prefered to store in hard disk then it would I/O, file handling, storing the entire data in file which is stored in the hard disk itself.
 • In order to store application in the database, JDBC is essential to perform the CRUD operations.
 
-# Steps Involved in Developed JDBC Application
+# Steps Involved in Developing JDBC Application
 
 1. Import the required package (Also download & Add Database specific jar into the project).
 2. Load and Register the respective database driver.
@@ -15,7 +15,6 @@ JDBC refers to Java DataBase Connectivity.
 5. Execute the query.
 6. Process the Result.
 7. Close the Connection.
-
 
 # References from the Code
 
@@ -60,5 +59,8 @@ public class LaunchClass{
         Class.forName("Demo");
     }
 }
+
+Output:-
+Static Block
 
 • In this pattern the respective Class.forName() is used to execute the respective static block information of it.
