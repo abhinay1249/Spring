@@ -4,6 +4,7 @@ package PreparedStatement;
 
 import java.sql.*;
 import java.util.Scanner;
+import utils.JDBCUtil;
 
 public class Insert {
     public static void main(String[] args) {
@@ -67,7 +68,8 @@ public class Insert {
                 default -> System.out.println(rows + " rows Affected Successfully!");
             }
 
-        } 
+        }
+        
         
         catch (SQLException e) {
             e.printStackTrace();
@@ -78,9 +80,9 @@ public class Insert {
         }
 
         finally {
-
+ 
             try {
-                JDBCUtil.closeConnection(conn, pst);    
+                JDBCUtil.closeConnection(conn, pst);   
             } 
             
             catch (SQLException e) {

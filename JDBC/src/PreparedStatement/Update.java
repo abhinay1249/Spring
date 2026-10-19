@@ -2,8 +2,8 @@
 
 package PreparedStatement;
 
-import src.JDBCUtil;
 import java.sql.*;
+import utils.JDBCUtil;
 
 public class Update {
     
@@ -17,12 +17,36 @@ public class Update {
             
             conn = JDBCUtil.getConnection();
 
+            String sqlQUery = 
+
+            pstmt = conn.prepareStatement(sqlQuery);
+
+
+
 
 
         } 
         
-        catch (Exception e) {
+        catch (SQLException e) {
+            e.printStackTrace();
         
+        }
+
+        catch(Exception e){
+            e.printStackTrace();
+        }
+
+        finally{
+            
+            try {
+                
+
+
+            } 
+            
+            catch (Exception e) {
+                e.printStackTrace();
+            }
         }
 
 
