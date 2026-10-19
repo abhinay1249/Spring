@@ -17,9 +17,11 @@ public class Update {
             
             conn = JDBCUtil.getConnection();
 
-            String sqlQUery = 
+            String sqlQuery = "UPDATE EMPLOYEES.EMPLOYEE SET DEPARTMENT = ? WHERE EMPLOYEE_ID = ?"; 
 
             pstmt = conn.prepareStatement(sqlQuery);
+
+
 
 
 
@@ -37,7 +39,7 @@ public class Update {
         }
 
         finally{
-            
+
             try {
                 
 
