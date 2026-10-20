@@ -89,3 +89,4 @@ Static Block
     --> For a Statement, it holds a connection object and a method entitled as createStatement();
     --> For a Prepared Statement, it holds a connection object and method entitled as prepareStatement(query);
     --> For a Statement, it is static and need to compile and execute for each CRUD operation to be performed.
+    --> For a Prepared Statement, it is dynamic once the respective query is compiled then the input from the user is executed all the time.
