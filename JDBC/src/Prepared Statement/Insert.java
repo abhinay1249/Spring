@@ -3,7 +3,7 @@
 import java.sql.*;
 import java.util.Scanner;
 
-public class Prepared_Statement {
+public class Insert {
     public static void main(String[] args) {
         
         Connection conn = null;
