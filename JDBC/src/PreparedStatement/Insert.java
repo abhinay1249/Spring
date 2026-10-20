@@ -70,7 +70,6 @@ public class Insert {
 
         }
         
-        
         catch (SQLException e) {
             e.printStackTrace();
         }
