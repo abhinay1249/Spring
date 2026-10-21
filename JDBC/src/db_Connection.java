@@ -8,7 +8,6 @@ import java.sql.Statement;
 // Establish a Connection with the database without ducking the exceptions rather handle them and perform usage of Utils.
 
 public class db_Connection {
-
     public static void main(String[] args) {
 
         Connection conn = null;
