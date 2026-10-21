@@ -11,7 +11,6 @@ public class JDBCUtil {
         } catch(ClassNotFoundException e){
             e.printStackTrace();
         }
-        
     }
 
     public static Connection getConnection() throws SQLException {
