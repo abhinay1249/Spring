@@ -22,15 +22,14 @@ public class db_Connection {
 
         // Execute a Query
 
+        
+
         // Process the Result
 
         // Close the Connections
 
         st.close();
         conn.close();
-
-
-        
 
     }
 }

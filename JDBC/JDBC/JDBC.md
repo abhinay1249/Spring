@@ -42,7 +42,7 @@ Output:-
 Static Block
 Non-Static Block
 
-• Rather than creating a object from the above structure it is simpler enough to create by using Class.forName("Demo");
+• Rather than creating a object from the above structure it is simpler enough to load the class into application by using Class.forName("Demo");
 
 class Demo{
     static{
