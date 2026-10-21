@@ -12,11 +12,7 @@ public class db_Connection {
         
             Class.forName("org.postgresql.Driver");
 
-            String url = "jdbc:postgresql://localhost:5432/Production";
-            String user = "postgres";
-            String password = "Prolim@1234567890";
-
-            conn = DriverManager.getConnection(url, user, password);
+            conn = JDBCUtil.getConnection();
 
             st = conn.createStatement();
 
@@ -42,17 +38,14 @@ public class db_Connection {
         }
 
         finally {
-
-            try {
-                conn.close();
-                st.close();
-                
-            } catch(SQLException e) {
+            
+            try{
+                JDBCUtil.closeConnection(conn, st);
+            }catch(SQLException e){
                 e.printStackTrace();
             }
            
         }
-
     }
 
 }
