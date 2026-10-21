@@ -8,7 +8,7 @@ public class JDBCUtil {
         
         try {
             Class.forName("org.postgresql.Driver");
-        } catch (ClassNotFoundException e) {
+        } catch(ClassNotFoundException e){
             e.printStackTrace();
         }
         
@@ -21,6 +21,13 @@ public class JDBCUtil {
         String password = "Prolim@1234567890";
 
         return DriverManager.getConnection(url, user, password);
+
+    }
+
+    public static void closeConnection(Connection conn, Statement st) throws SQLException {
+
+        st.close();
+        conn.close();
 
     }
     
