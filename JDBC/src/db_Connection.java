@@ -18,8 +18,16 @@ public class db_Connection {
 
         // Create a Statement
 
-        
+        Statement st = conn.createStatement();
 
+        // Execute a Query
+
+        // Process the Result
+
+        // Close the Connections
+
+        st.close();
+        conn.close();
 
 
         
