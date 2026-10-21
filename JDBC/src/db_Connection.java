@@ -1,11 +1,6 @@
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-
 // Establish a Connection with the database without ducking the exceptions rather handle them and perform usage of Utils.
+
+import java.sql.*;
 
 public class db_Connection {
     public static void main(String[] args) {
