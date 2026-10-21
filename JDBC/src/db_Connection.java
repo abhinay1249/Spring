@@ -11,7 +11,7 @@ public class db_Connection {
         // Establish a Connection
 
         String url = "jdbc:postgresql://localhost:5432/Production";
-        String user = "localhost";
+        String user = "postgres";
         String password = "Prolim@1234567890";
 
         Connection conn = DriverManager.getConnection(url, user, password);
@@ -21,10 +21,19 @@ public class db_Connection {
         Statement st = conn.createStatement();
 
         // Execute a Query
-
         
+        String sqlQuery = "INSERT INTO EMPLOYEES.EMPLOYEE VALUES(1002, 'Abhinay', 'Marise', 'abhinaymarise@google.com','Development','2027-12-12',7075751249)";
+        int rows = st.executeUpdate(sqlQuery);
 
         // Process the Result
+
+        if(rows == 0){
+            System.out.println("Recheck the Sql Query");
+        }else if(rows > 1){
+            System.out.println(rows + " Rows Affected Successfully");
+        }else{
+            System.out.println(rows + " Row Affected Successfully");
+        }
 
         // Close the Connections
 
