@@ -84,3 +84,6 @@ Static Block
 • To ensure the data that need to be inserted into the database and has to be dynamically given by the user we need to implement Prepared Statement rather than using Statement.
 
 • Prepared Statement shall allow you to take the respective inputs from the user and perform the ingestion into the database.
+
+• Statement is a Parent object whereas PreparedStatement is a child object. 
+    --> For a statement it holds a connection object and a method entitled as createStatement();
