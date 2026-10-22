@@ -17,7 +17,7 @@ public class Prepared_Statement {
 
             pst = conn.prepareStatement(sql);
 
-            System.out.println("Enter the Employee Values");
+            System.out.println("Enter Employee Details:");
 
             Scanner scan = new Scanner(System.in);
 
@@ -47,7 +47,7 @@ public class Prepared_Statement {
             
             System.out.print("Enter Phone Number: ");
 
-            Integer phone_number = scan.nextInt();
+            Long phone_number = scan.nextLong();
 
             pst.setInt(1, employee_id);
             pst.setString(2, first_name);
@@ -55,7 +55,7 @@ public class Prepared_Statement {
             pst.setString(4, email_id);
             pst.setString(5, department);
             pst.setDate(6, Date.valueOf(hire_date));
-            pst.setInt(7, phone_number);
+            pst.setLong(7, phone_number);
 
             int rows = pst.executeUpdate();
 
