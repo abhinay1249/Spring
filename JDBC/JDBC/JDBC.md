@@ -86,4 +86,5 @@ Static Block
 • Prepared Statement shall allow you to take the respective inputs from the user and perform the ingestion into the database.
 
 • Statement is a Parent object whereas PreparedStatement is a child object. 
-    --> For a statement it holds a connection object and a method entitled as createStatement();
+    --> For a Statement, it holds a connection object and a method entitled as createStatement();
+    --> For a Prepared Statement, it holds a connection object and method entitled as prepareStatement(query); 
