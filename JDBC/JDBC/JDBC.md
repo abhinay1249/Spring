@@ -70,3 +70,5 @@ Static Block
 • When you perform a select query then the method that need to perform is executeQuery(). The return type for this is "ResultSet".
 
 • Result set is used to hold the data in the java application just as how the database holds the tables and its records.
+
+• Using Result Set there are few set of operations that need to perform to obtain the data in readable format.
