@@ -77,5 +77,8 @@ Static Block
 
 • For this respective execute() methods there shall be two methods that need to be understood before we proceed ahead they are, getUpdateCount() and getResultSet() these methods ensure that the respective two ways of handling CRUD is done with a single statement.
 
-• R
+• Creating a Util for the boilerplate Code to ensure that the methods can be invoked by the Class. Make sure the methods are created by static keyword.
+
+• Create a seperate java file for the Util and make sure these methods in it are invoked by other Java Applications.
+
 
