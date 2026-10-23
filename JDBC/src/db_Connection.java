@@ -16,7 +16,6 @@ public class db_Connection {
             conn = JDBCUtil.getConnection();
 
             st = conn.createStatement();
-
             
             String sqlQuery = "SELECT * FROM EMPLOYEES.EMPLOYEE";
 

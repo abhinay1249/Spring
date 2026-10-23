@@ -1,5 +1,4 @@
 
-import java.beans.Statement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -9,15 +8,18 @@ import java.sql.SQLException;
 public class Prepared_Statement {
     public static void main(String[] args) {
         
-        Connection con = null;
-        Statement st = null;
+        Connection conn = null;
         PreparedStatement pst = null;
 
         try {
 
-            con = JDBCUtil.getConnection();
+            conn = JDBCUtil.getConnection();
 
-            st = con.();
+            String sql = "INSERT INTO EMPLOYEES.EMPLOYEE VALUES(?,?,?,?,?,?,?)";
+
+            conn.prepareStatement(sql);
+
+
 
 
 
