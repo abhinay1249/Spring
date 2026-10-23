@@ -1,0 +1,1 @@
+// Establish a connection with database and without hardcoding the details perform the respective inputs from the user.
