@@ -65,4 +65,6 @@ Static Block
 
 • In this pattern the respective Class.forName() is used to execute the respective static block information of it.
 
-• When you perform a non select query then the method need to perform in the execute query is executeUpdate();
+• When you perform a non select query then the method need to perform is executeUpdate();
+
+• When you perform a select query then the method that need to perform is executeQuery();
