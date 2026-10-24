@@ -19,13 +19,17 @@ public class Consolidated {
 
         Statement st = con.createStatement();
 
-        String sqlQuery = "SELECT * FRON EMPLOYEES.EMPLOYEE";
+        String sqlQuery = "SELECT * FROM EMPLOYEES.EMPLOYEE";
 
         boolean status = st.execute(sqlQuery);
 
         if(status){
             ResultSet res = st.getResultSet();
-            System.out.println(res.getInt(1)+" "+res.getString(2)+" "+res.getString(3)+" "+res.getString(4)+" "+res.getString(5)+" "+res.getDate(6)+" "+res.getLong(7));
+            
+            while(res.next()){
+                System.out.println(res.getInt(1)+" "+res.getString(2)+" "+res.getString(3)+" "+res.getString(4)+" "+res.getString(5)+" "+res.getDate(6)+" "+res.getLong(7));
+            }
+            
         }else{
             int rows = st.getUpdateCount();
 
