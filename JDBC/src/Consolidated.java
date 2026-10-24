@@ -3,6 +3,7 @@
 import java.sql.*;
 
 public class Consolidated {
+    
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
         
         // Load or Register the Driver
