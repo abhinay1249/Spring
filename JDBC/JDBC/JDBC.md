@@ -67,8 +67,10 @@ Static Block
 
 • When you perform a non select query then the method need to perform is executeUpdate();
 
-• When you perform a select query then the method that need to perform is executeQuery(). The return type for this is "ResultSet".
+• When you perform a select query then the method that need to perform is executeQuery(). The return type for this is a "ResultSet".
 
 • Result set is used to hold the data in the java application just as how the database holds the tables and its records.
 
 • Using Result Set there are few set of operations that need to perform to obtain the data in readable format. The operation specified are .getInt, .next()
+
+• To ensure both the respective executeUpdate() and executeQuery() neeed to handled at once rather than two methods, we can simply use execute() method itself which returns a boolean type.
