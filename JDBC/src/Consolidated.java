@@ -24,6 +24,7 @@ public class Consolidated {
         boolean status = st.execute(sqlQuery);
 
         if(status){
+
             ResultSet res = st.getResultSet();
             
             while(res.next()){
@@ -31,6 +32,7 @@ public class Consolidated {
             }
             
         }else{
+            
             int rows = st.getUpdateCount();
 
             switch(rows){
