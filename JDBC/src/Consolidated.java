@@ -24,11 +24,21 @@ public class Consolidated {
         boolean status = st.execute(sqlQuery);
 
         if(status){
-            ResultSet res = st.executeQuery(sqlQuery);
+            ResultSet res = st.getResultSet();
             System.out.println(res.getInt(1)+" "+res.getString(2)+" "+res.getString(3)+" "+res.getString(4)+" "+res.getString(5)+" "+res.getDate(6)+" "+res.getLong(7));
         }else{
-            int rows = 
+            int rows = st.getUpdateCount();
+
+            switch(rows){
+                case 0 -> System.out.println("SQL Query Failed");
+                case 1 -> System.out.println(rows + " row Affected Succesfully!");
+                default -> System.out.println(rows + " rows Affected Successfully!");
+            }
+
         }
+
+        st.close();
+        con.close();
 
     }
 }
