@@ -76,3 +76,6 @@ Static Block
 • To ensure both the respective executeUpdate() and executeQuery() neeed to handled at once rather than two methods, we can simply use execute() method itself which returns a boolean type.
 
 • For this respective execute() methods there shall be two methods that need to be understood before we proceed ahead they are, getUpdateCount() and getResultSet() these methods ensure that the respective two ways of handling CRUD is done with a single statement.
+
+• R
+

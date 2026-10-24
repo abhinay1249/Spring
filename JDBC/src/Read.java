@@ -24,6 +24,7 @@ public class Read {
             System.out.println(rs.getInt("EMPLOYEE_ID")+" "+rs.getString("FIRST_NAME")+" "+rs.getString("LAST_NAME")+" "+rs.getString("EMAIL_ID")+" "+rs.getString("DEPARTMENT")+" "+rs.getDate("HIRE_DATE")+" "+rs.getLong("PHONE_NUMBER"));
         }
 
+        rs.close();
         st.close();
         con.close();
 
