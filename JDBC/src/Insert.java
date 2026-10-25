@@ -1,6 +1,8 @@
+// Establishing a Connection with Database and performing Insert Operation.
+
 import java.sql.*;
 
-class Main{
+public class Insert {
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException{
 
