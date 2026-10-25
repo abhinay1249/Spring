@@ -15,7 +15,7 @@ public class Update {
 
         Statement st = conn.createStatement();
 
-        String sqlQuery = "UPDATE EMPLOYEES.EMPLOYEE SET FIRST_NAME = 'Smith' WHERE EMPLOYEE_ID = 1003";
+        String sqlQuery = "UPDATE EMPLOYEES.EMPLOYEE SET EMPLOYEE_ID = 1003 WHERE EMPLOYEE_ID = 1004";
 
         int rows = st.executeUpdate(sqlQuery);
 
