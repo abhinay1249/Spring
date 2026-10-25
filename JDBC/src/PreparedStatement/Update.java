@@ -3,6 +3,7 @@
 package PreparedStatement;
 
 import java.sql.*;
+import java.util.Scanner;
 import utils.JDBCUtil;
 
 public class Update {
@@ -20,6 +21,16 @@ public class Update {
             String sqlQuery = "UPDATE EMPLOYEES.EMPLOYEE SET DEPARTMENT = ? WHERE EMPLOYEE_ID = ?"; 
 
             pstmt = conn.prepareStatement(sqlQuery);
+
+            System.out.println("Enter Your Details to be Updated:");
+
+            Scanner scan = new Scanner(System.in);
+
+            System.out.print("Enter your Department To be Updated: ");
+            
+            String department = scan.next();
+
+
 
 
 
