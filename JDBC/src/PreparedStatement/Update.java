@@ -10,9 +10,9 @@ public class Update {
     
     public static void main(String[] args) {
         
-
         Connection conn = null;
         PreparedStatement pstmt = null;
+        Scanner scan = new Scanner(System.in);
 
         try {
             
@@ -23,8 +23,6 @@ public class Update {
             pstmt = conn.prepareStatement(sqlQuery);
 
             System.out.println("Enter Your Details to be Updated:");
-
-            Scanner scan = new Scanner(System.in);
 
             System.out.print("Enter your Department To be Updated: ");
             
@@ -37,9 +35,13 @@ public class Update {
             pstmt.setString(1,department);
             pstmt.setInt(2, employeeId);
 
+            int rows = pstmt.executeUpdate();
 
-
-
+            switch(rows){
+                case 0 -> System.out.println("SQL Query Failed");
+                case 1 -> System.out.println(rows+" row Affected Successfully!");
+                default -> System.out.println(rows+" rows Affected Successfully!");
+            }
 
         } 
         
@@ -55,9 +57,8 @@ public class Update {
         finally{
 
             try {
-                
-
-
+                JDBCUtil.closeConnection(conn, pstmt);
+                scan.close();
             } 
             
             catch (Exception e) {
