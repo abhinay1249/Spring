@@ -16,7 +16,21 @@ public class Delete {
 
         Statement st = conn.createStatement();
 
-        
+        String sqlQuery = "DELETE FROM EMPLOYEES.EMPLOYEE WHERE EMPLOYEE_ID = 1003";
+        int rows = st.executeUpdate(sqlQuery);
+
+        switch(rows) {
+
+            case 0 -> System.out.println("SQL Query Failed");
+
+            case 1 -> System.out.println(rows + " row Affected Successfully");
+
+            default -> System.out.println(rows + " rows Affected Successfully");
+
+        }
+
+        st.close();
+        conn.close();
 
     }
 }
