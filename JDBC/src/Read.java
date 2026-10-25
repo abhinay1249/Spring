@@ -27,6 +27,5 @@ public class Read {
         st.close();
         con.close();
 
-
     }
 }
