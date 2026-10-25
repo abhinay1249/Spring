@@ -71,4 +71,4 @@ Static Block
 
 • Result set is used to hold the data in the java application just as how the database holds the tables and its records.
 
-• Using Result Set there are few set of operations that need to perform to obtain the data in readable format.
+• Using Result Set there are few set of operations that need to perform to obtain the data in readable format. The operation specified are .getInt, .next()
