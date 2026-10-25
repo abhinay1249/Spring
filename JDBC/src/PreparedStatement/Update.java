@@ -30,6 +30,12 @@ public class Update {
             
             String department = scan.next();
 
+            System.out.print("Enter you Employee ID that need to be Updated: ");
+
+            Integer employeeId = scan.nextInt();
+
+            
+
 
 
 
