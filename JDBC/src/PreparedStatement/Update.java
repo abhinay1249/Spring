@@ -34,11 +34,8 @@ public class Update {
 
             Integer employeeId = scan.nextInt();
 
-            
-
-
-
-
+            pstmt.setString(1,department);
+            pstmt.setInt(2, employeeId);
 
 
 
