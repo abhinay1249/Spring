@@ -18,7 +18,11 @@ public class Delete {
             conn = JDBCUtil.getConnection();
             
             String sqlQuery = "DELETE FROM EMPLOYEES.EMPLOYEE WHERE EMPLOYEE_ID = ?";
+            conn.prepareStatement(sqlQuery);
 
+            System.out.println("Enter the Employee ID to be deleted: ");
+
+            System.out.print("Enter the Employee ID: ");
 
             
 
