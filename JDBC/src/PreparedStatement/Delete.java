@@ -37,10 +37,24 @@ public class Delete {
             }
 
         }
+
+        catch(SQLException e){
+            e.printStackTrace();
+        }
         
         catch (Exception e) {
-            
+            e.printStackTrace();
         }
 
+        finally{
+
+            try {
+                JDBCUtil.closeConnection(conn, pstmt);
+                scan.close();
+            } 
+            catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
