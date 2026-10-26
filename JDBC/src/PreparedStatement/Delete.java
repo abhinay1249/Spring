@@ -24,12 +24,22 @@ public class Delete {
 
             System.out.print("Enter the Employee ID: ");
 
-            
+            Integer employee_id = scan.nextInt();
+
+            pstmt.setInt(1, employee_id);
+
+            int rows = pstmt.executeUpdate();
+
+            switch(rows){
+                case 0 -> System.out.println("SQL Query Failed");
+                case 1 -> System.out.println(rows+" row Affected Successfully!");
+                default -> System.out.println(rows + " rows Affected Successfully!"); 
+            }
 
         }
         
         catch (Exception e) {
-        
+            
         }
 
     }
