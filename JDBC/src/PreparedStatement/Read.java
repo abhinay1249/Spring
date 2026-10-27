@@ -2,6 +2,37 @@
 
 package PreparedStatement;
 
+import java.sql.*;
+import utils.JDBCUtil;
+
 public class Read {
+
+    public static void main(String[] args) {
+        
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+
+        try {
+        
+            conn = JDBCUtil.getConnection();
+
+            String sqlQuery = "";
+
+            pstmt = conn.prepareStatement(sqlQuery);
+
+
+            
+
+        } 
+        
+        catch (Exception e) {
+        
+        
+        }
+
+
+
+
+    }
     
 }
