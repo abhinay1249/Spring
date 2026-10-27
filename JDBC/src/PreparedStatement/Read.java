@@ -29,14 +29,18 @@ public class Read {
 
             pstmt.setInt(1, employee_id);
 
-            res = pstmt.executeQuery(); 
-            
+            res = pstmt.executeQuery();
 
-        } 
+            System.out.println(res.getInt(1)+ " " + res.getString(2) + " " + res.getString(3) + " " +res.getString(4) + " " +res.getString(5) + " " +res.getDate(6) + " " +res.getLong(7));
+            
+        }
+        
+        catch(SQLException e){
+            e.printStackTrace();
+        }
         
         catch (Exception e) {
-        
-        
+            e.printStackTrace();
         }
 
         finally {
