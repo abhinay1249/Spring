@@ -16,9 +16,22 @@ public class Update {
 
             conn = JDBCUtil.getConnection();
 
-            String sqlQuery = "UPDATE EMPLOYEES.EMPLOYEE SET ";
-
+            String sqlQuery = "UPDATE EMPLOYEES.EMPLOYEE SET = WHERE EMPLOYEE_ID = ";
             pstmt = conn.prepareStatement(sqlQuery);
+
+            pstmt.set(1,);
+            pstmt.setInt(2,);
+            pstmt.addBatch();
+
+            pstmt.set(1,);
+            pstmt.setInt(2,);
+            pstmt.addBatch();
+            
+            pstmt.set(1,);
+            pstmt.setInt(2,);
+            pstmt.addBatch();
+
+            pstmt.executeBatch();
 
             
         } 
