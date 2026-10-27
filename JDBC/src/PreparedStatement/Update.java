@@ -1,4 +1,4 @@
-// Establish a connection with database and without hardcoding the details perform the respective operation as inputs from the user.
+// Establish a connection with database and without hardcoding the details, perform the respective Update as inputs from the user.
 
 package PreparedStatement;
 
