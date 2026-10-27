@@ -7,7 +7,7 @@ import java.util.*;
 import utils.JDBCUtil;
 
 public class Read {
-    
+
     public static void main(String[] args) {
         
         Connection conn = null;
@@ -31,8 +31,11 @@ public class Read {
 
             res = pstmt.executeQuery();
 
-            System.out.println(res.getInt(1)+ " " + res.getString(2) + " " + res.getString(3) + " " +res.getString(4) + " " +res.getString(5) + " " +res.getDate(6) + " " +res.getLong(7));
-            
+            while(res.next()){
+
+                System.out.println(res.getInt(1)+ " " + res.getString(2) + " " + res.getString(3) + " " +res.getString(4) + " " +res.getString(5) + " " +res.getDate(6) + " " +res.getLong(7));
+
+            }
         }
         
         catch(SQLException e){
