@@ -13,6 +13,7 @@ public class Read {
         Connection conn = null;
         PreparedStatement pstmt = null;
         Scanner scan = new Scanner(System.in);
+        ResultSet res = null;
 
         try {
         
@@ -22,9 +23,13 @@ public class Read {
 
             pstmt = conn.prepareStatement(sqlQuery);
 
-            
+            System.out.print("Enter your Employee Id: ");
 
+            Integer employee_id = scan.nextInt();
 
+            pstmt.setInt(1, employee_id);
+
+            ResultSet res = 
             
 
         } 
