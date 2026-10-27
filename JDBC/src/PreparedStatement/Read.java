@@ -29,7 +29,7 @@ public class Read {
 
             pstmt.setInt(1, employee_id);
 
-            ResultSet res = 
+            res = pstmt.executeQuery(); 
             
 
         } 
@@ -39,8 +39,20 @@ public class Read {
         
         }
 
+        finally {
+            
+            try {
 
-
+                JDBCUtil.closeConnection(conn, pstmt);
+                scan.close();
+                res.close();    
+            } 
+            
+            catch (Exception e) {
+                e.printStackTrace();
+            }
+        
+        }
 
     }
     
