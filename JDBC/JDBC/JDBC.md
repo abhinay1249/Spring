@@ -91,4 +91,6 @@ Static Block
     --> For a Statement, it is static and need to compile and execute for each CRUD operation to be performed.
     --> For a Prepared Statement, it is dynamic once the respective query is compiled then the input from the user is executed all the time.
 
-• Until now, The operations that are made to the database shall perform each at a time, which causes a lot of performance issues on the database. Such as if you want to perform multiple updates then for the current scenario, the code that was written will be connecting to the database depending upon the number of updates that need to be performed. 
+• Until now, The operations that are made to the database shall perform each at a time, which causes a lot of performance issues on the database. Such as if you want to perform multiple updates then for the current scenario, the code that was written will be connecting to the database depending upon the number of updates that need to be performed.
+
+• To overcome this, we shall implement BatchUpdate(), such that multiple operations can be done by connecting to a database at once.
