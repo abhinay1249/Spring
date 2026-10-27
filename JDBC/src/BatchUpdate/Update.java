@@ -16,31 +16,44 @@ public class Update {
 
             conn = JDBCUtil.getConnection();
 
-            String sqlQuery = "UPDATE EMPLOYEES.EMPLOYEE SET = WHERE EMPLOYEE_ID = ";
+            String sqlQuery = "UPDATE EMPLOYEES.EMPLOYEE SET LAST_NAME = ? WHERE EMPLOYEE_ID = ?";
             pstmt = conn.prepareStatement(sqlQuery);
 
-            pstmt.set(1,);
-            pstmt.setInt(2,);
+            pstmt.setString(1,"M");
+            pstmt.setInt(2,1001);
             pstmt.addBatch();
 
-            pstmt.set(1,);
-            pstmt.setInt(2,);
+            pstmt.setString(1,"M");
+            pstmt.setInt(2,1002);
             pstmt.addBatch();
             
-            pstmt.set(1,);
-            pstmt.setInt(2,);
+            pstmt.setString(1,"T");
+            pstmt.setInt(2,1003);
             pstmt.addBatch();
 
             pstmt.executeBatch();
 
+            System.out.println("The neccesary Updates are performed in the Database!");
             
         } 
-        
+
+        catch(SQLException e){
+            e.printStackTrace();
+        }
+
         catch (Exception e) {
             e.printStackTrace();
         }
 
-
+        finally{
+            
+            try {
+                JDBCUtil.closeConnection(conn, pstmt);    
+            } 
+            
+            catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
-    
 }
