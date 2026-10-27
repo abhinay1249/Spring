@@ -7,7 +7,7 @@ import java.util.*;
 import utils.JDBCUtil;
 
 public class Read {
-
+    
     public static void main(String[] args) {
         
         Connection conn = null;
@@ -50,14 +50,12 @@ public class Read {
                 JDBCUtil.closeConnection(conn, pstmt);
                 scan.close();
                 res.close();    
-            } 
+
+            }
             
             catch (Exception e) {
                 e.printStackTrace();
             }
-        
         }
-
     }
-    
 }
