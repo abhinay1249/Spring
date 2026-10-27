@@ -16,7 +16,7 @@ public class Read {
         
             conn = JDBCUtil.getConnection();
 
-            String sqlQuery = "";
+            String sqlQuery = "SELECT * FROM EMPLOYEES.EMPLOYEE WHERE EMPLOYEE_ID = ?";
 
             pstmt = conn.prepareStatement(sqlQuery);
 
