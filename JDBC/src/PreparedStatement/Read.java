@@ -3,6 +3,7 @@
 package PreparedStatement;
 
 import java.sql.*;
+import java.util.*;
 import utils.JDBCUtil;
 
 public class Read {
@@ -11,6 +12,7 @@ public class Read {
         
         Connection conn = null;
         PreparedStatement pstmt = null;
+        Scanner scan = new Scanner(System.in);
 
         try {
         
@@ -19,6 +21,8 @@ public class Read {
             String sqlQuery = "SELECT * FROM EMPLOYEES.EMPLOYEE WHERE EMPLOYEE_ID = ?";
 
             pstmt = conn.prepareStatement(sqlQuery);
+
+           
 
 
             
