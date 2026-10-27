@@ -22,7 +22,7 @@ public class Read {
 
             pstmt = conn.prepareStatement(sqlQuery);
 
-           
+            
 
 
             
