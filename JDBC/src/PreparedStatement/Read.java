@@ -31,10 +31,10 @@ public class Read {
 
             res = pstmt.executeQuery();
 
-            while(res.next()){
-
+            if(res.next()){
                 System.out.println(res.getInt(1)+ " " + res.getString(2) + " " + res.getString(3) + " " +res.getString(4) + " " +res.getString(5) + " " +res.getDate(6) + " " +res.getLong(7));
-
+            }else{
+                System.out.println("No Employee_Id such as " + employee_id + "is found, Kindly Enter the Correct One!");
             }
         }
         
