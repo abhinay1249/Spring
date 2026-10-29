@@ -1,0 +1,1 @@
+// Establish a connection with database and perform multiple Inserts upon once connecting to the database.
