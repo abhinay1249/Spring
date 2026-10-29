@@ -2,9 +2,7 @@
 
 package BatchUpdate;
 
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-
+import java.sql.*;
 import utils.JDBCUtil;
 
 public class Delete {
@@ -19,10 +17,17 @@ public class Delete {
             conn = JDBCUtil.getConnection();
 
             String sqlQuery = "DELETE FROM EMPLOYEES.EMPLOYEE WHERE EMPLOYEE_ID = ?";
-            pstmt = conn.preparedStatement(sqlQuery);
+            pstmt = conn.prepareStatement(sqlQuery);
 
+            pstmt.setInt(1,1008);
+            pstmt.addBatch();
 
+            pstmt.setInt(1,1007);
+            pstmt.addBatch();
 
+            pstmt.executeBatch();
+
+            System.out.println("The neccesary Deletes are performed in the Database!");
 
         } 
 
@@ -33,6 +38,15 @@ public class Delete {
         catch (Exception e) {
             e.printStackTrace();
         }
-        
+
+        finally{
+
+            try {
+                JDBCUtil.closeConnection(conn, pstmt);    
+            } 
+            catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
