@@ -59,5 +59,14 @@ public class Insert {
             e.printStackTrace();
         }
 
+        finally{
+
+            try {
+                JDBCUtil.closeConnection(conn, pstmt);    
+            } 
+            catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
