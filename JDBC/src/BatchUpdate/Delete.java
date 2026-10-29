@@ -31,7 +31,7 @@ public class Delete {
 
         } 
 
-        catch(SQLException e){
+        catch(SQLException e) {
             e.printStackTrace();
         }
 
@@ -39,7 +39,7 @@ public class Delete {
             e.printStackTrace();
         }
 
-        finally{
+        finally {
 
             try {
                 JDBCUtil.closeConnection(conn, pstmt);    
