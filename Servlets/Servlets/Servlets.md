@@ -18,4 +18,4 @@ Fundamentals [Client-Server Architecture]
 
 <img width="743" height="356" alt="Screenshot 2026-11-05 130220" src="https://github.com/user-attachments/assets/8b3feb25-9cd8-450d-8cb1-c6dbdca843ed" />
 
-• Usually, for Java programs holds a main() method such that the JVM can access it run the program but for Servlets there is no requirement for the main() method since the servlet container will perform it in the server.
+• Usually, for Java programs holds a main() method such that the JVM can access it run the program but for Servlets there is no requirement for the main() method since the servlet container within the server will execute the Servlet program.
