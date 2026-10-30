@@ -10,3 +10,8 @@ Fundamentals [Client-Server Architecture]
 • There are two types of responses:-
     • Static Response - A response that is fixed irrespective of the users that are using the webpage.
     • Dynamic Response - A repsonse that is flexible and showcase dynamic results for multiple users accordingly on the webpage.
+
+# Servlets
+
+• Servelts are defined as software program that are residing on the server machine.
+• They are used to generate dynamic responses to the client request.
