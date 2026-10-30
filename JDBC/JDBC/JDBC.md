@@ -82,3 +82,5 @@ Static Block
 • Create a seperate java file for the Util and make sure these methods in it are invoked by other Java Applications.
 
 • To ensure the data that need to be inserted into the database and has to be dynamically given by the user we need to implement Prepared Statement rather than using Statement.
+
+• Prepared Statement shall allow you to take the respective inputs from the user and perform the ingestion into the database.
