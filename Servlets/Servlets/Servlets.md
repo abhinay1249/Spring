@@ -27,4 +27,7 @@ Fundamentals [Client-Server Architecture]
     --> Install Apache Tom Cat Server with the latest version on your local machine.
     --> Click on New, Select Dynamic Web Project.
     --> Select the Apache Tom Cat Server that is installed on your machine.
-    --> While Confguring the project, you shall have a content Directory utilize the path present or replace it with "WebApp".
+    --> While Confguring the project, you shall have a content Directory where utilize the path that is present or replace it with "WebApp".
+    --> Then from the Package Explorer Navigate to the WebApp folder, Right Click upon it.
+    --> Select New and then select HTML file, name it as index.html
+    -->  
