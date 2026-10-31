@@ -21,3 +21,7 @@ Fundamentals [Client-Server Architecture]
 • Usually, for Java programs holds a main() method such that the JVM can access it run the program but for Servlets there is no requirement for the main() method since the servlet container within the server will execute the Servlet program.
 
 • The server that holds the Servlet Container and is responsible for executing the Servlet Programs is known as "Apache TomCat" Server.
+
+• Static Web Page, From here the entire implementation is done in Eclipse IDE JEE Version.
+
+    --> Install Apache Tom Cat Server with the latest version on your local machine.
