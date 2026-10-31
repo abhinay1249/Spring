@@ -25,3 +25,6 @@ Fundamentals [Client-Server Architecture]
 • Static Web Page, From here the entire implementation is done in Eclipse IDE JEE Version.
 
     --> Install Apache Tom Cat Server with the latest version on your local machine.
+    --> Click on New, Select Dynamic Web Project.
+    --> Select the Apache Tom Cat Server that is installed on your machine.
+    --> While Confguring the project, you shall have a content Directory utilize the path present or replace it with "WebApp".
