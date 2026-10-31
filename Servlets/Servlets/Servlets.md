@@ -22,7 +22,9 @@ Fundamentals [Client-Server Architecture]
 
 • The server that holds the Servlet Container and is responsible for executing the Servlet Programs is known as "Apache TomCat" Server.
 
-• Static Web Page, From here the entire implementation is done in Eclipse IDE JEE Version.
+# Static Web Page
+
+• From here the entire implementation is done in Eclipse IDE JEE Version.
 
     --> Install Apache Tom Cat Server with the latest version on your local machine.
     --> Click on New, Select Dynamic Web Project.
@@ -32,4 +34,6 @@ Fundamentals [Client-Server Architecture]
     --> Select New and then select HTML file, name it as index.html
     --> In the HTML file, you shall create a marquee tag and then save it.
     --> Right Click on the HTML file and then run it through the Server it shall redirect you to the webpage running on that Server.
-    --> After the respective checks are done, dont forget to stop the server as it shouldn't perform any conflicts to the upcoming WebApplication that to be runned on the server. 
+    --> After the respective checks are done, dont forget to stop the server as it shouldn't perform any conflicts to the upcoming WebApplication that to be runned on the server.
+
+ 
