@@ -41,4 +41,7 @@ Fundamentals [Client-Server Architecture]
     --> Create a Project known as Dynamic Web Page and then configure it with the content directory.
     --> Build an HTML file that includes a form that holds a username, city and sign in button.
     --> Using Servlet when a user clicks Sign in then it should dynamically produce the output.
+    --> In order to perform like the above point, hover to src and create a servlet program that handles only POST request.
+    --> Take a refernce of the Program from the source code.
+    
  
