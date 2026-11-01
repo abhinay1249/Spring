@@ -50,7 +50,9 @@ Fundamentals [Client-Server Architecture]
     • A very first thing is that, An object will be created internally for the class by the Servlet Container itself.
     • The LifeCycle holds three crucial methods, they are init(), service(), destroy()
         • First, the class will be loaded and then instantiated.
-        • Second, the init() method will be executed by the Servlet Container internally and whatever the intializations that need to be done for the data will be performed and included in this method.
+        • Second, the init() method will be executed by the Servlet Container internally and whatever the intializations that need to be done for the data will be performed and included in this method. This method will be called only once.
+        • Third, Any kind of request from the client that reaches the server will execute the service() logic it holds multiple number of times.
+        • Fourth, It is similar to a normal Java Program once the program is executed the JVM will shut down and which is exacty similar to the Servlet as well as the Server or the Servlet Container will shut down. This will be method called only once.
     
 
  
