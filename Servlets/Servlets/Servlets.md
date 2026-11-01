@@ -48,8 +48,9 @@ Fundamentals [Client-Server Architecture]
 
     • A Servlet Life Cycle does hold various methods to perform its operation.
     • A very first thing is that, An object will be created internally for the class by the Servlet Container itself.
-    • The LifeCycle begins like this,
-        •
+    • The LifeCycle holds three crucial methods, they are init(), service(), destroy()
+        • First, the class will be loaded and then instantiated.
+        • Second, the init() method will be executed by the Servlet Container internally and whatever the intializations that need to be done for the data will be performed and included in this method.
     
 
  
