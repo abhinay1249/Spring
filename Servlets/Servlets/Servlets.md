@@ -38,16 +38,18 @@ Fundamentals [Client-Server Architecture]
 
 # Dynamic Web Page
 
-    --> Create a Project known as Dynamic Web Page and then configure it with the content directory.
-    --> Build an HTML file that includes a form that holds a username, city and sign in button.
-    --> Using Servlet when a user clicks Sign in then it should dynamically produce the output.
-    --> In order to perform like the above point, hover to src and create a servlet program that handles only POST request.
-    --> Take a refernce of the Program from the source code.
+    • Create a Project known as Dynamic Web Page and then configure it with the content directory.
+    • Build an HTML file that includes a form that holds a username, city and sign in button.
+    • Using Servlet when a user clicks Sign in then it should dynamically produce the output.
+    • In order to perform like the above point, hover to src and create a servlet program that handles only POST request.
+    • Take a refernce of the Program from the source code.
 
 # Servlet Life Cycle
 
-    --> A Servlet Life Cycle does hold various methods to perform its operation.
-    --> A very first thing is that, An object will be created internally for the class by the Servlet Container itself.
-    --> The LifeCycle begins like this,
+    • A Servlet Life Cycle does hold various methods to perform its operation.
+    • A very first thing is that, An object will be created internally for the class by the Servlet Container itself.
+    • The LifeCycle begins like this,
+        •
+    
 
  
