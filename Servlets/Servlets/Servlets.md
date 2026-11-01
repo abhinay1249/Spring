@@ -26,15 +26,15 @@ Fundamentals [Client-Server Architecture]
 
 # Static Web Page
 
-    --> Install Apache Tom Cat Server with the latest version on your local machine.
-    --> Click on New, Select Dynamic Web Project.
-    --> Select the Apache Tom Cat Server that is installed on your machine.
-    --> While Confguring the project, you shall have a content Directory where utilize the path that is present or replace it with "WebApp".
-    --> Then from the Package Explorer Navigate to the WebApp folder, Right Click upon it.
-    --> Select New and then select HTML file, name it as index.html
-    --> In the HTML file, you shall create a marquee tag and then save it.
-    --> Right Click on the HTML file and then run it through the Server it shall redirect you to the webpage running on that Server.
-    --> After the respective checks are done, dont forget to stop the server as it shouldn't perform any conflicts to the upcoming WebApplication that to be runned on the server.
+    • Install Apache Tom Cat Server with the latest version on your local machine.
+    • Click on New, Select Dynamic Web Project.
+    • Select the Apache Tom Cat Server that is installed on your machine.
+    • While Confguring the project, you shall have a content Directory where utilize the path that is present or replace it with "WebApp".
+    • Then from the Package Explorer Navigate to the WebApp folder, Right Click upon it.
+    • Select New and then select HTML file, name it as index.html
+    • In the HTML file, you shall create a marquee tag and then save it.
+    • Right Click on the HTML file and then run it through the Server it shall redirect you to the webpage running on that Server.
+    • After the respective checks are done, dont forget to stop the server as it shouldn't perform any conflicts to the upcoming        WebApplication that to be runned on the server.
 
 # Dynamic Web Page
 
@@ -43,5 +43,11 @@ Fundamentals [Client-Server Architecture]
     --> Using Servlet when a user clicks Sign in then it should dynamically produce the output.
     --> In order to perform like the above point, hover to src and create a servlet program that handles only POST request.
     --> Take a refernce of the Program from the source code.
-    
+
+# Servlet Life Cycle
+
+    --> A Servlet Life Cycle does hold various methods to perform its operation.
+    --> A very first thing is that, An object will be created internally for the class by the Servlet Container itself.
+    --> The LifeCycle begins like this,
+
  
