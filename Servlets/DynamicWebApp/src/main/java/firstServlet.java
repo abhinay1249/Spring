@@ -18,8 +18,16 @@ public class firstServlet extends HttpServlet {
 		
 		PrintWriter writer = response.getWriter();
 		
-		writer.println("Hello " + username);
-		writer.println("Welcome to " + city);
+		// writer.println("Hello " + username);
+		// writer.println("Welcome to " + city);
+		
+		writer.println("<html><head><title>Dynamic Web App</title><head>");
+		writer.println("<body><h1>Welcome to Dynamic Web Page</h1><h2>Please Fill the details</h2>");
+		writer.println("<table>");
+		writer.println("<tr><th>Username</th>  <th> City </th> </tr>");
+		writer.println("<tr><td>"+ username +"</td><td>" +city+"</td></tr>");
+		writer.println("</table> </body>");
+		writer.println("</html>");
 		
 		writer.close();
 	}
