@@ -56,3 +56,7 @@ Fundamentals [Client-Server Architecture]
     • Each thread is associated to each client request for the service() to perform its operation.
 
 # doGet & doPost
+
+    • doGet is the method where in once the user submit the details the respective details will be seen on the url of the server.
+    • In the form tag if there is no method mentioned then by default it is confirmed as get request.
+    • doPost is the method where in once the user submit the details the respective details will be not available on the screen and are hidden. 
