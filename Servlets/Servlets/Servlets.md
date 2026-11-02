@@ -54,3 +54,5 @@ Fundamentals [Client-Server Architecture]
         • Third, Any kind of request from the client that reaches the server will execute the service() logic it holds multiple number of times.
         • Fourth, It is similar to a normal Java Program once the program is executed the JVM will shut down and which is exacty similar to the Servlet as well as the Server or the Servlet Container will shut down. This method will be called only once.
     • Each thread is associated to each client request for the service() to perform its operation.
+
+# doGet & doPost
