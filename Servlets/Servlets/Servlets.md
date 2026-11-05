@@ -15,3 +15,5 @@ Fundamentals [Client-Server Architecture]
 
 • Servelts are defined as software program that are residing on the server machine.
 • They are used to generate dynamic responses to the client request.
+
+<img width="743" height="356" alt="Screenshot 2026-11-05 130220" src="https://github.com/user-attachments/assets/8b3feb25-9cd8-450d-8cb1-c6dbdca843ed" />
